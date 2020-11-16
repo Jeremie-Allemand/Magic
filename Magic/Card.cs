@@ -18,7 +18,13 @@ namespace Magic
             
         }
 
-        public Card(string name, string cost, int strength, int toughness, string desc) 
+        public Card(string name, string cost, string desc) //Non-Creature
+        {
+            Name = name;
+            Cost = cost;
+            Desc = desc;
+        }
+        public Card(string name, string cost, int strength, int toughness, string desc) //Creature
         {
             Name = name;
             Cost = cost;

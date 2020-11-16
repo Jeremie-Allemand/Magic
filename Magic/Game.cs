@@ -6,10 +6,10 @@ namespace Magic
 {
     class Game
     {
-
+        Player Player;
         public Game()
         {
-
+            Player = new Player();
         }
     }
 }
