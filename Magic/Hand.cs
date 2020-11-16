@@ -4,7 +4,8 @@ using System.Text;
 
 namespace Magic
 {
-    class Spell:Card
+    class Hand
     {
+
     }
 }

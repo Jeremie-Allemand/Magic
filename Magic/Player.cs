@@ -6,9 +6,9 @@ namespace Magic
 {
     class Player
     {
-
-        public Player() { 
-
+        Deck Deck;
+        public Player() {
+            Deck = new Deck();
         }
     }
 }
