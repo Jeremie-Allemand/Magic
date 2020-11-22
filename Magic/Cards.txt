@@ -1,0 +1,5 @@
+﻿Plains	Land	tapForMana white	""	0	0
+Islands	Land	tapForMana blue	""	0	0
+Swamps	Land	tapForMana black	""	0	0
+Mountains	Land	tapForMana red	""	0	0
+Forests	Land	tapForMana green	""	0	0

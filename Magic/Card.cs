@@ -6,31 +6,38 @@ namespace Magic
 {
     class Card
     {
+        string Id { get; set; }
         string Name { get; set; }
-        //Cost is a string where the number is grey mana and the letters are colored mana r = red, b = blue, g = green, d = dark, w = white
-        string Cost { get; set; }
+        string Type { get; set; }
+        string Effect { get; set; }
+        string FlavorText { get; set; }
+        string ImgLink { get; set; }
+        bool IsPermanent { get;}
+        bool IsCreature { get;}
         int Strength { get; set; }
         int Toughness { get; set; }
-        string Desc { get; set; }
-
+        bool IsLand { get;}
+        bool IsInstant { get;}
+        int[] Cost = new int[6]; // grey = [0];  white = [1]; blue = [2]; black = [3]; red = [4]; green = [5]
         public Card() 
-        {     
+        { 
             
         }
 
-        public Card(string name, string cost, string desc) //Non-Creature
+        public Card(string name)
         {
             Name = name;
-            Cost = cost;
-            Desc = desc;
         }
-        public Card(string name, string cost, int strength, int toughness, string desc) //Creature
+
+        public void SetType() 
+        { 
+
+        }
+
+        public void GetPropierties() 
         {
-            Name = name;
-            Cost = cost;
-            Strength = strength;
-            Toughness = toughness;
-            Desc = desc;
+            
         }
+
     }
 }
